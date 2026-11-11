@@ -1,0 +1,159 @@
+:root{
+    --logo-vermelha: #C92529;
+    --logo-verde: #176044;
+    --logo-creme:#FFF6E8;
+    --fonte: #206347;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Arial Black", Arial, sans-serif;
+}
+header{
+    background-color: var(--logo-verde);
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+}
+header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+h3{
+    margin-bottom: 0px;
+}
+#atalhos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    gap: 5px;
+}
+
+#primeiro{
+    display: flex;
+    background-color: var(--logo-creme);
+}
+
+#imagem_principal{
+    width: 60%;
+    max-height: 720px;
+}
+
+#slogan {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+#slogan h2{
+    color: var(--logo-verde);
+    font-size: 64px;
+    max-width: 500px;
+    margin-bottom: 0px;
+}
+#slogan p{
+    color: var(--fonte);
+    max-width: 500px;
+}
+
+#cardapio{
+    background-color: var(--logo-vermelha);
+    padding: 30px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    background-color: #206347;
+    border-radius: 30px;
+    height: 120px;
+    max-width: 540px;
+    margin-top: 50px;
+}
+.produto img {
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.produto h4{
+    margin-left: 30px;
+    
+}
+.produto p{
+    margin-left: 20px;
+    max-width: 350px;
+}
+.menos {
+    cursor: pointer;
+    background-color: var(--logo-creme);
+    display: flex;
+    align-items: center;
+    align-self: center;
+    margin-right: 10px;
+    border-radius: 50px;
+    border-style: none;
+    height: 40px;
+    width: 110px;
+    color: #206347;
+    background-color: var(--logo-vermelha);
+}
+.menos p{
+    text-align: center;
+    align-self: center;
+}
+
+#carrinho{
+    background-color: var(--logo-vermelha) ;
+    display: flex;
+}
+#cesta{
+    background-color: #176044;
+    width: 50%;
+    max-width: 540px;
+    margin: 0 auto;
+    height: 540px;
+    border-radius: 50px;
+}
+#cesta ol{
+    display: flex;
+    flex-direction: column;
+    transform: translate(150px, 100px);
+    max-width: 200px;
+    max-height: 200px;
+    background-color: bisque;
+}
+#cesta #valor {
+    transform: translate(150px, 350px);
+    color: var(--logo-vermelha);
+}
+#cesta #pagamento {
+    transform: translate(150px, 360px);
+    background-color: var(--logo-creme);
+    border-radius: 30px;
+    height: 40px;
+    width: 80px;
+}
