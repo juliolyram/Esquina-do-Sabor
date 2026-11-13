@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esquina do Sabor</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div id="titulo">
@@ -13,97 +15,52 @@
             <h3>Esquina do sabor</h3>
         </div>
         <div id="atalhos">
-            <a href="cardapio">menu</a>
-            <a href="carrinho">carrinho</a>
+            <a href="#menu">menu</a>
+            <a href="#carrinho">carrinho</a>
         </div>
         <div id="login">
-            <a href="">Login</a>
+            <a href="/Esquina-do-Sabor/front-end/pages/login.html">Login</a>
             <p>/</p>
-            <a href="">Registrar</a> 
+            <a href="">Registrar</a>
         </div>
     </header>
-        <main>
-            <article id="primeiro">
-                    <img src="/banco/imagens/logo.png" alt="Logo da lanchonhete" id="imagem_principal">
-                    <div id="slogan">
-                        <h2>Esquina do sabor aonde o mundo tem mais cor</h2>
-                        <p>Proprietario: João Gustavo, Italo gay</p>
-                        <p>Nossa história começou em 1917, durante a Primeira Guerra Mundial, quando a família Saborisda deixou a Inglaterra e veio para o Brasil em busca de uma nova vida, trazendo sonhos, coragem e esperança.</p>
-                        <p>São mais de 100 anos de tradição, dedicação e carinho, servindo gerações de famílias, criando memórias e fazendo parte do dia a dia de tantas pessoas.</p>
-                        <p>Mais do que uma lanchonete, somos um lugar de encontros, sabores e histórias. Seguimos mantendo viva nossa tradição e nosso compromisso com cada cliente. Mais de um século de história, e você faz parte dela!</p>
-                    </div>
-            </article>
-            <article id="cardapio">
-                <div class="produto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCDL3PfkcKea10dw-TwCDTf-cg2L4YPgcPnExSMnkUQ&s=10" alt="coxinha">
-                    <div id="descricao">
-                        <h4 id="nome do produto">Coxinha do Patrick</h4>
-                        <p>Coxinha muito saborosa, vem catupiry com costela</p>
-                        <p>R$: 9,00</p>
-                    </div>
-                    <button class="menos" type="button"><p>Adicionar</p></button>
-                </div>
-                <div class="produto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2SAG1EH_aE-mSQ_1-eGau5VzUFiqrCCYCN6GTfQbXA&s=10" alt="pastel de frango">
-                    <div>
-                    <h4 id="nome do produto">Pastel de Flango</h4>
-                    <p>Pastel de vento com 300 grams de frango e calango</p>
-                    <p>R$: 30,00</p>
-                    </div>
-                    <button class="menos" type="button"><p>Adicionar</p></button>
-                </div>
-                <div class="produto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHHMeaF5jwST7FLNNuK1O9cRR1i49qta_xc8YDvRvOA&s=10" alt="pão de queijo">
-                    <div>
-                    <h4 id="nome do produto">Pão de queijo</h4>
-                    <p>Pão de queijo com muito queijo direto de minas feito lá no mesmo dia</p>
-                    <p>R$: 70,00</p>
-                    </div>
-                    <button class="menos" type="button"><p>Adicionar</p></button>
-                </div>
-                <div class="produto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwmy_HPnyQY7ndHSQN8B4TEE6Uu6KvciDCNK6FKmS5Cg&s=10" alt="misto quente">
-                    <div>
-                    <h4 id="nome do produto">Misto fungico</h4>
-                    <p>Uma mistura de pão mais 2 fatias de presunto e 2 fatias de queijo</p>
-                    <p>R$: 10,99</p>
-                    </div>
-                    <button class="menos" type="button"><p>Adicionar</p></button>
-                </div>
-                <div class="produto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZtLBohDYRZKvLCY7uxHUNqdBf5_BpbCi2QyPMuJvRoQ&s=10" alt="Caldo de cana">
-                    <div>
-                    <h4 id="nome do produto">Caldo de cana </h4>
-                    <p>Caldo de cana simples e básico aquele que todo mundo gosta</p>
-                    <p>R$: 0,99</p>
-                    </div>
-                    <button class="menos" type="button"><p>Adicionar</p></button>
-                </div>
-                <div class="produto">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5WkTvbdOevAdJXkkadAvOLH6eutLRK6mdu-YW9hGjDA&s=10" alt="Lasanha">
-                    <div>
-                    <h4 id="nome do produto">Lasanha abolonhesa</h4>
-                    <p>Lasanha com queijo, preseunto, carne moida, peru, costela, alface, carne do sol e almondegas</p>
-                    <p>R$: 199,99</p>
-                    </div>
-                    <button class="menos" type="button"><p>Adicionar</p></button>
-                </div>
-            </article>
-            
-            <article id="carrinho">
-                <div id="cesta">
-                        <ol id="tabeladecompras">
-                            <li>coxinha</li>
-                            <li>sopa</li>
-                        </ol>
-                        <p id="valor">R$: </p>
-                        <button id="pagamento">Pagar</button>
-                </div>                
-            </article>
-        </main>
-        <footer>
-            <p style="background-color: orange; display: flex; justify-content: center;">Feito por mim :D</p>
-        </footer>
-        <script src="script.js"></script> 
+    <main>
+        <article id="primeiro">
+            <img src="/banco/imagens/logo.png" alt="Logo da lanchonhete" id="imagem_principal">
+            <div id="slogan">
+                <h2>Esquina do sabor aonde o mundo tem mais cor</h2>
+                <p>Proprietario: João Gustavo, Italo gay</p>
+                <p>Nossa história começou em 1917, durante a Primeira Guerra Mundial, quando a família Saborisda deixou
+                    a Inglaterra e veio para o Brasil em busca de uma nova vida, trazendo sonhos, coragem e esperança.
+                </p>
+                <p>São mais de 100 anos de tradição, dedicação e carinho, servindo gerações de famílias, criando
+                    memórias e fazendo parte do dia a dia de tantas pessoas.</p>
+                <p>Mais do que uma lanchonete, somos um lugar de encontros, sabores e histórias. Seguimos mantendo viva
+                    nossa tradição e nosso compromisso com cada cliente. Mais de um século de história, e você faz parte
+                    dela!</p>
+            </div>
+        </article>
+        <section id="menu">
+            <div id="filtros"></div>
+            <article id="cardapio"></article>
+        </section>
+
+        <article id="carrinho">
+            <div id="cesta">
+                <ol id="tabeladecompras">
+                    <li>coxinha</li>
+                    <li>sopa</li>
+                </ol>
+                <p id="valor">R$: </p>
+                <button id="pagamento">Pagar</button>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p style="background-color: orange; display: flex; justify-content: center;">Feito por mim :D</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

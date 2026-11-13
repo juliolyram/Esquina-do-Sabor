@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/front-end/assets/login.css">
+    <title>Cadastro - Esquina do Sabor</title>
+    <link rel="stylesheet" href="../assets/login.css">
 </head>
-
 <body>
-
-    <body>
-        <form action="">
-            <h1>Faça o seu login</h1>
-            <div class="input">
-                <label for="email">Seu e-mail</label>
-                <input type="email" id="email" />
-            </div>
-            <div class="input">
-                <label for="telefone">Seu telefone</label>
-                <input type="text" id="telefone"/>
-            </div>
-            <div class="input">
-                <label for="telefone">Seu telefone</label>
-                <input type="text" id="telefone" />
-            </div>
-            <div class="lembrar">
-                <input type="checkbox" />
-                <p>Lembrar-me</p>
-            </div>
-            <button>Entrar</button>
-            <p>
-                Esqueceu seus nome?
-                <a href="">Clique aqui!</a>
-            </p>
-        </form>
-    </body>
+    <form id="form-registro">
+        <h1>Crie a sua conta</h1>
+        <div class="input">
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome" required />
+        </div>
+        <div class="input">
+            <label for="cpf">Seu CPF</label>
+            <input type="text" id="cpf" required />
+        </div>
+        <div class="input">
+            <label for="telefone">Seu telefone</label>
+            <input type="text" id="telefone" required />
+        </div>
+        <p id="mensagem"></p>
+        <button type="submit">Cadastrar</button>
+        <p>Já tem conta? <a href="login.html">Entrar</a></p>
+    </form>
+    <script src="../assets/auth.js"></script>
 </body>
-
 </html>
