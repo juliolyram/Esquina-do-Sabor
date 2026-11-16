@@ -132,6 +132,7 @@ h3{
     display: flex;
 }
 #cesta{
+    position: relative;
     background-color: #176044;
     width: 50%;
     max-width: 540px;
@@ -143,20 +144,53 @@ h3{
     display: flex;
     flex-direction: column;
     transform: translate(150px, 100px);
-    max-width: 200px;
-    max-height: 200px;
-    background-color: bisque;
+    width: 240px;
+    height: 200px;
+    background-color: #d22023;
+    border-radius: 20px;
 }
-#cesta #valor {
-    transform: translate(150px, 350px);
+#cesta li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+#valores{
+    transform: translate(150px, 100px);
+    width: 240px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#valores #valor{
     color: var(--logo-vermelha);
 }
-#cesta #pagamento {
-    transform: translate(150px, 360px);
+#valores #pagamento{
+    cursor: pointer;
     background-color: var(--logo-creme);
     border-radius: 30px;
     height: 40px;
     width: 80px;
+}
+#valores #mensagem{
+    text-align: center;
+    font-size: 12px;
+    color: var(--logo-creme);
+}
+#cesta li button{
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--logo-vermelha);
+    color: var(--logo-creme);
+}
+#cesta li span{
+    flex: 1;
 }
 
 #filtros{
